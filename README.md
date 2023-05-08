@@ -6,19 +6,18 @@ You are a data professional in a data analytics firm, called Automatidata. The c
 
 That said, the TLC team is asking us to consider the following:
 
-The relationship between fare amount and payment type.
-Test the hypothesis that customers who use a credit card pay higher fare amounts.
-Should you conclude that there is a statistically significant relationship between credit card payment and fare amount, discuss what the next steps should be: what are your thoughts on strategies our team could implement to encourage customers to pay with credit card?
+- The relationship between fare amount and payment type.
+- Test the hypothesis that customers who use a credit card pay higher fare amounts.
+- Should you conclude that there is a statistically significant relationship between credit card payment and fare amount, discuss what the next steps should be: what are your thoughts on strategies our team could implement to encourage customers to pay with credit card?
 
 
 ## II. Project Goal
 
-Analyze the relationship between total fare amount and payment type
-Sample data and analyze whether there is a relationship between payment type and total fare amount. For example: discover if customers who use credit cards pay higher total fare amounts than customers who use cash.
+- Analyze the relationship between total fare amount and payment type
+- Sample data and analyze whether there is a relationship between payment type and total fare amount. For example: discover if customers who use credit cards pay higher total fare amounts than customers who use cash.
+- Should you conclude that there is a statistically significant relationship between credit card payment and total fare amount, discuss what the next steps should be: what are your thoughts on strategies to encourage customers to pay with credit card if the difference is significant?
 
-Should you conclude that there is a statistically significant relationship between credit card payment and total fare amount, discuss what the next steps should be: what are your thoughts on strategies to encourage customers to pay with credit card if the difference is significant?
-
-Explain result to stakeholders who may not be familiar with analytics
+- Explain result to stakeholders who may not be familiar with analytics
 
 
 ## III. Data Source

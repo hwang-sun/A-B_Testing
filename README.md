@@ -125,7 +125,7 @@ print('P-value:', p)
 - T-score: $6.735824687046151$
 - P-value: $3.120675999156806e-11$
 
-=> P-value < 0.05, reject H_0, there's a significant difference in average total fare amount between customers who paid in credit card and customers who paid in cash
+=> P-value < 0.05, reject $H_0$, there's a significant difference in average total fare amount between customers who paid in credit card and customers who paid in cash
 
 ### 7. **Launch Decision** - *Based on the results and trade-offs, should the change launch?*
 

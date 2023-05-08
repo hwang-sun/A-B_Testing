@@ -88,7 +88,7 @@ After performing EDA and Data cleaning, I conduct A/B test in following process:
 
     # sampling based on the calculated sample size of 400
     t_group = credit.sample(n = 400, replace = True, random_state = 1)
-    c_group = cash.sample(n = 400, replace = True, random_state = 1)
+    c_group = cash.sample(n = 400, replace = True, random_state = 1)```
     
 4. **Run the Experiment** - *What are the requirements for running an experiment?*
     

@@ -54,34 +54,29 @@ Without this assumption, we cannot draw causal conclusions about how payment met
 ## A/B Test Result
 
 After performing EDA and Data cleaning, I conduct A/B test in following process:
-Problem Statement - What is the goal of the experiment?
 
-Finding ways to generate more revenue for taxi cab drivers by discovering if customers spend higher when paying in credit card compared to cash. From the hypothesis testing result, the business can develope strategy to encourage customers to pay with credit cards, which will likely generate more revenue for taxi cab drivers.
+1. Problem Statement - What is the goal of the experiment?
 
-The metric used for assessing if customers spend higher with credit card payment type compared to cash payemnt type is the total_amount (The time-and-distance fare calculated by the meter) per day per trip.
+  Finding ways to generate more revenue for taxi cab drivers by discovering if customers spend higher when paying in credit card compared to cash. From the hypothesis testing result, the business can develope strategy to encourage customers to pay with credit cards, which will likely generate more revenue for taxi cab drivers.
 
-Control group : the average total fare amount per day per trip from customers who paid in cash (𝜇𝑐)
-Treatment group : the average total fare amount per day per trip from customers who paid in credit card (𝜇𝑡)
-Define Hypothesis - What result do you hypothesize from the experiment?
+  The metric used for assessing if customers spend higher with credit card payment type compared to cash payemnt type is the total_amount (The time-and-distance fare calculated by the meter) per day per trip.
 
-𝐻0:𝜇𝑐=𝜇𝑡
-There is no difference in average total fare amount between customers paid with cash and ones paid with credit card.
+  Control group : the average total fare amount per day per trip from customers who paid in cash (𝜇𝑐)
+  Treatment group : the average total fare amount per day per trip from customers who paid in credit card (𝜇𝑡)
 
-𝐻0:𝜇𝑐≠𝜇𝑡
-There is significant difference in average total fare amount between customers paid with cash and ones paid with credit card.
+2. Define Hypothesis - What result do you hypothesize from the experiment?
 
-Design the Experiment - What are your experiment parameters?
+  - $𝐻0:𝜇𝑐=𝜇𝑡$
+  There is no difference in average total fare amount between customers paid with cash and ones paid with credit card.
 
-Determine sample size by formula: (𝑛=16𝜎2𝛿2)
-. where 𝜎
- is the population standard deviation, and 𝛿
- is the smallest meaningful difference between the control and treatment group. The formula has assumptions that the significant level is 0.05
- and the statistical power is 0.8
-.
+  - $𝐻0:𝜇𝑐≠𝜇𝑡$
+  There is significant difference in average total fare amount between customers paid with cash and ones paid with credit card.
 
-In the scope of this project, I assume that the difference of $2
- per trip between control and treatment group will be significant enough to launch future marketing projects for promoting credit card payment. The population standard deviation 𝜎=10
- is assumed in order to calculate the sample size.
+3. Design the Experiment - What are your experiment parameters?
+
+  Determine sample size by formula: $(𝑛=\frac{16𝜎^2} {𝛿^2})$. Where 𝜎 is the population standard deviation, and 𝛿 is the smallest meaningful difference between the control and treatment group. The formula has assumptions that the significant level is 0.05 and the statistical power is 0.8.
+
+  In the scope of this project, I assume that the difference of $\$2$ per trip between control and treatment group will be significant enough to launch future marketing projects for promoting credit card payment. The population standard deviation $𝜎=10$ is assumed in order to calculate the sample size.
 
 Based on the above assumptions, the sample size needed for conducting A/B test is: 𝑛=16∗(10)2(2)2=400
  for each group.

@@ -24,7 +24,7 @@ The TLC data comes from over 200,000 taxi and limousine licensees, making approx
 
 Remark: For the purpose of this project, assume that the sample data comes from an experiment in which customers are randomly selected and divided into two groups:
 
-- customers who are required to pay with credit card
+- Customers who are required to pay with credit card
 - customers who are required to pay with cash
 
 Without this assumption, we cannot draw causal conclusions about how payment method affects fare amount.

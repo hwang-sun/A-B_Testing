@@ -60,6 +60,7 @@ After performing EDA and Data cleaning, I calculate and visualize the average to
 According to the visuals, There's a variation in average total_amount across groups of payment_type, and each group distribution seems to have slight difference. However, the difference is not substantial indicating the relationship between payment_type and total_amount is just moderate.
 
 On the other hand, based on the average values between group 1 (customers who paid in credit card) and group 2 (customers who paid in cash), it appears that customers from group 1 tend to pay a larger total fare amount than customers from group 2. However, this difference might arise from random sampling, so in order to assess whether the difference is statistically significant, I conduct a hypothesis test in following process.
+---
 
 ### 1. **Problem Statement** - *What is the goal of the experiment?*
 

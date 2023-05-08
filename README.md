@@ -31,3 +31,13 @@ Without this assumption, we cannot draw causal conclusions about how payment met
 
 
 ## IV. PACE Process for completing project
+- Plan: conceptualize the scope of the project and develop the steps that will guide you through the process of completing a project.
+  + Determine the scope of project
+  + Determine the project goal
+  + Create a workflow for completing the project
+  
+- Analyze: collect, prepare, and analyze all of the data for your project.
+
+- Construct: build models that will allow you access to hidden relationships locked within data.
+
+- Execute: present the finding of your analysis, receive feedback, and make revisions as necessary.

@@ -1,5 +1,5 @@
 # A/B Testing (Payment type vs Fare amount)
-For detail analysis: 
+For detail analysis: `A_B testing.ipynb`
 
 ## I. Problem Context
 You are a data professional in a data analytics firm, called Automatidata. The company's newest client, the New York City Taxi & Limousine Commission (New York City TLC) requested a detailed statistical analysis of payment type. That is, do the customers who use a credit card pay higher fare amounts than those who use cash?

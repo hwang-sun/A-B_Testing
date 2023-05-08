@@ -101,9 +101,45 @@ c_group = cash.sample(n = 400, replace = True, random_state = 1)
     Without this assumption, we cannot draw causal conclusions about how payment method affects fare amount.
 
 5. **Validity Checks** - *Did the experiment run soundly without errors or bias?*
-
+    
+    This project requires an assumption that passengers were forced to pay one way or the other, and that once informed of this requirement, they always complied with it. The data was not collected this way; so, an assumption had to be made to randomly group data entries to perform an A/B test.
 
 6. **Inteprete Results** - *In which direction is the metric significant statistically and practically?*
 
+```python
+# conduct the hypothesis
+from scipy import stats
+t, p = stats.ttest_ind(a = t_group, b = c_group, equal_var = False)
+print('T-score:', t)
+print('P-value:', p)
+```
+- T-score: $6.735824687046151$
+- P-value: $3.120675999156806e-11$
+
+=> P-value < 0.05, reject H_0, there's a significant difference in average total fare amount between customers who paid in credit card and customers who paid in cash
 
 7. **Launch Decision** - *Based on the results and trade-offs, should the change launch?*
+
+**Insight Interpretation**
+
+The calculated p-value is less than 0.05, it means that the probability of observing a difference in the average total fare amount between the cash and credit card groups is significant and not by chance alone. Therefore, I reject the null hypothesis and conclude that there is a significant difference in the average total fare amount between customers who paid with cash and those who paid with credit card.
+
+The A/B result provides insights into whether credit card payment can lead to higher revenue for taxi cab drivers. It's statistically significant is that customers who pay with credit card (treatment group) tend to spend more on taxi fares compared to those who pay with cash (control group). This may be due to the fact that paying with credit card is more convenient for customers, or that they feel more comfortable spending more when they don't have to physically hand over cash. Alternatively, it may be due to the fact that credit card users are more likely to be from higher income brackets and are therefore more willing and able to spend more on taxi fares. This can provide the basis for developing strategies to encourage more credit card payments and increase revenue.
+
+**The key business insight is that encouraging customers to pay with credit cards will likely generate more revenue for taxi cab drivers.**
+
+**Recommendations**
+
+Based on this result, the business can develop strategies to encourage more customers to pay with credit cards. For example, they can offer discounts or incentives for credit card payments, advertise the benefits of paying with credit cards, and work on improving the payment system to make it more convenient for customers to pay with credit cards.
+
+**Analysis Drawbacks**
+
+**Note: Given the assumptions, follwing factors need to be ajusted for the result to be valid and practical:**
+
+- The sample size of 400 was calculated based on assumptions about the population standard deviation and cusomters are randomly selected and divided into two groups. However, in reality, the population variance need to be based on previous research or A/B test, A/A test, further more, there may be factors that influence whether a customer pay with cash or credit card, such as age, income, or location. Failure to account for these factors could introduce bias into the results.
+
+
+- The experiment uses data come from a single city (New York). In reality, geographic difference may affects ho customers pay for taxi rides and how much they spend.
+
+
+- This dataset does not account for other likely explanations. For example, riders might not carry lots of cash, so it's easier to pay for longer/farther trips with a credit card. In other words, it's far more likely that total fare amount determines payment type, rather than vice versa.

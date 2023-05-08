@@ -55,14 +55,14 @@ Without this assumption, we cannot draw causal conclusions about how payment met
 
 After performing EDA and Data cleaning, I conduct A/B test in following process:
 
-1. Problem Statement - What is the goal of the experiment?
+**1. Problem Statement - What is the goal of the experiment?**
 
-  Finding ways to generate more revenue for taxi cab drivers by discovering if customers spend higher when paying in credit card compared to cash. From the hypothesis testing result, the business can develope strategy to encourage customers to pay with credit cards, which will likely generate more revenue for taxi cab drivers.
+    Finding ways to generate more revenue for taxi cab drivers by discovering if customers spend higher when paying in credit card compared to cash. From the hypothesis testing result, the business can develope strategy to encourage customers to pay with credit cards, which will likely generate more revenue for taxi cab drivers.
 
-  The metric used for assessing if customers spend higher with credit card payment type compared to cash payemnt type is the total_amount (The time-and-distance fare calculated by the meter) per day per trip.
+    The metric used for assessing if customers spend higher with credit card payment type compared to cash payemnt type is the total_amount (The time-and-distance fare calculated by the meter) per day per trip.
 
-  Control group : the average total fare amount per day per trip from customers who paid in cash (𝜇𝑐)
-  Treatment group : the average total fare amount per day per trip from customers who paid in credit card (𝜇𝑡)
+    + Control group : the average total fare amount per day per trip from customers who paid in cash (𝜇𝑐)
+    + Treatment group : the average total fare amount per day per trip from customers who paid in credit card (𝜇𝑡)
 
 2. Define Hypothesis - What result do you hypothesize from the experiment?
 

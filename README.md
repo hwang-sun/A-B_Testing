@@ -1,4 +1,4 @@
-# A-B_Testing
+# A/B Testing (Payment type vs Fare amount)
 For detail analysis: 
 
 ## Problem Context

@@ -37,7 +37,16 @@ Without this assumption, we cannot draw causal conclusions about how payment met
   + Create a workflow for completing the project
   
 - Analyze: collect, prepare, and analyze all of the data for your project.
-
+  + Exploratory data analysis
+  + Data cleaning
+  + Identify relationship
+  
 - Construct: build models that will allow you access to hidden relationships locked within data.
-
+  + Data sampling
+  + A/B test performing
+  + Validity checks
+  
 - Execute: present the finding of your analysis, receive feedback, and make revisions as necessary.
+  + Insight conclusion
+  + Recommendations
+  + Analysis drawbacks

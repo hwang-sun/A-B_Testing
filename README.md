@@ -53,6 +53,8 @@ Without this assumption, we cannot draw causal conclusions about how payment met
   
 ## V. A/B Test Result
 
+<img src="relationship_graph.png" align=center>
+
 After performing EDA and Data cleaning, I conduct A/B test in following process:
 
 ### 1. **Problem Statement** - *What is the goal of the experiment?*

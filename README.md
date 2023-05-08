@@ -121,7 +121,7 @@ print('P-value:', p)
 
 ### 7. **Launch Decision** - *Based on the results and trade-offs, should the change launch?*
 
-**Insight Interpretation**
+#### **Insight Interpretation**
 
 The calculated p-value is less than 0.05, it means that the probability of observing a difference in the average total fare amount between the cash and credit card groups is significant and not by chance alone. Therefore, I reject the null hypothesis and conclude that there is a significant difference in the average total fare amount between customers who paid with cash and those who paid with credit card.
 
@@ -129,11 +129,11 @@ The A/B result provides insights into whether credit card payment can lead to hi
 
 **The key business insight is that encouraging customers to pay with credit cards will likely generate more revenue for taxi cab drivers.**
 
-**Recommendations**
+#### **Recommendations**
 
 Based on this result, the business can develop strategies to encourage more customers to pay with credit cards. For example, they can offer discounts or incentives for credit card payments, advertise the benefits of paying with credit cards, and work on improving the payment system to make it more convenient for customers to pay with credit cards.
 
-**Analysis Drawbacks**
+#### **Analysis Drawbacks**
 
 **Note: Given the assumptions, follwing factors need to be ajusted for the result to be valid and practical:**
 

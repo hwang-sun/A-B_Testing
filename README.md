@@ -16,7 +16,6 @@ That said, the TLC team is asking us to consider the following:
 - Analyze the relationship between total fare amount and payment type
 - Sample data and analyze whether there is a relationship between payment type and total fare amount. For example: discover if customers who use credit cards pay higher total fare amounts than customers who use cash.
 - Should you conclude that there is a statistically significant relationship between credit card payment and total fare amount, discuss what the next steps should be: what are your thoughts on strategies to encourage customers to pay with credit card if the difference is significant?
-
 - Explain result to stakeholders who may not be familiar with analytics
 
 
@@ -28,8 +27,9 @@ The TLC data comes from over 200,000 taxi and limousine licensees, making approx
 
 Remark: For the purpose of this project, assume that the sample data comes from an experiment in which customers are randomly selected and divided into two groups:
 
-customers who are required to pay with credit card
-customers who are required to pay with cash
+- customers who are required to pay with credit card
+- customers who are required to pay with cash
+
 Without this assumption, we cannot draw causal conclusions about how payment method affects fare amount.
 
 

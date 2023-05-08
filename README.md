@@ -55,7 +55,7 @@ Without this assumption, we cannot draw causal conclusions about how payment met
 
 After performing EDA and Data cleaning, I conduct A/B test in following process:
 
-#### 1. **Problem Statement** - *What is the goal of the experiment?*
+### 1. **Problem Statement** - *What is the goal of the experiment?*
 
 Finding ways to generate more revenue for taxi cab drivers by discovering if customers spend higher when paying in credit card compared to cash. From the hypothesis testing result, the business can develope strategy to encourage customers to pay with credit cards, which will likely generate more revenue for taxi cab drivers.
 
@@ -64,7 +64,7 @@ The metric used for assessing if customers spend higher with credit card payment
 - Control group : the average total fare amount per day per trip from customers who paid in cash $(\mu_{c})$
 - Treatment group : the average total fare amount per day per trip from customers who paid in credit card $(\mu_{t})$
 
-#### 2. **Define Hypothesis** - *What result do you hypothesize from the experiment?*
+### 2. **Define Hypothesis** - *What result do you hypothesize from the experiment?*
 
 - $H_0 : \mu_{c} = \mu_{t}$
 
@@ -73,7 +73,7 @@ There is no difference in average total fare amount between customers paid with 
 
 There is significant difference in average total fare amount between customers paid with cash and ones paid with credit card.
     
-#### 3. **Design the Experiment** - *What are your experiment parameters?*
+### 3. **Design the Experiment** - *What are your experiment parameters?*
     
 - Determine sample size by formula: $(n = \frac {16\sigma^2} {\delta^2})$. where $\sigma$ is the population standard deviation, and $\delta$ is the smallest meaningful difference between the control and treatment group. The formula has assumptions that the significant level is $0.05$ and the statistical power is $0.8$. 
 
@@ -91,7 +91,7 @@ t_group = credit.sample(n = 400, replace = True, random_state = 1)
 c_group = cash.sample(n = 400, replace = True, random_state = 1)
 ```
     
-#### 4. **Run the Experiment** - *What are the requirements for running an experiment?*
+### 4. **Run the Experiment** - *What are the requirements for running an experiment?*
     
 Instruments and data pipelines are set up to collect data. For the purpose of this project, assume that the sample data comes from an experiment in which customers are randomly selected and divided into two groups: 
 
@@ -100,11 +100,11 @@ Instruments and data pipelines are set up to collect data. For the purpose of th
 
 Without this assumption, we cannot draw causal conclusions about how payment method affects fare amount.
 
-#### 5. **Validity Checks** - *Did the experiment run soundly without errors or bias?*
+### 5. **Validity Checks** - *Did the experiment run soundly without errors or bias?*
     
 This project requires an assumption that passengers were forced to pay one way or the other, and that once informed of this requirement, they always complied with it. The data was not collected this way; so, an assumption had to be made to randomly group data entries to perform an A/B test.
 
-#### 6. **Inteprete Results** - *In which direction is the metric significant statistically and practically?*
+### 6. **Inteprete Results** - *In which direction is the metric significant statistically and practically?*
 
 ```python
 # conduct the hypothesis
@@ -119,7 +119,7 @@ print('P-value:', p)
 
 => P-value < 0.05, reject H_0, there's a significant difference in average total fare amount between customers who paid in credit card and customers who paid in cash
 
-#### 7. **Launch Decision** - *Based on the results and trade-offs, should the change launch?*
+### 7. **Launch Decision** - *Based on the results and trade-offs, should the change launch?*
 
 **Insight Interpretation**
 

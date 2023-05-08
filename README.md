@@ -127,7 +127,7 @@ The calculated p-value is less than 0.05, it means that the probability of obser
 
 The A/B result provides insights into whether credit card payment can lead to higher revenue for taxi cab drivers. It's statistically significant is that customers who pay with credit card (treatment group) tend to spend more on taxi fares compared to those who pay with cash (control group). This may be due to the fact that paying with credit card is more convenient for customers, or that they feel more comfortable spending more when they don't have to physically hand over cash. Alternatively, it may be due to the fact that credit card users are more likely to be from higher income brackets and are therefore more willing and able to spend more on taxi fares. This can provide the basis for developing strategies to encourage more credit card payments and increase revenue.
 
-**The key business insight is that encouraging customers to pay with credit cards will likely generate more revenue for taxi cab drivers.**
+*The key business insight is that encouraging customers to pay with credit cards will likely generate more revenue for taxi cab drivers.*
 
 #### **Recommendations**
 

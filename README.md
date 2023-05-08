@@ -13,10 +13,7 @@ That said, the TLC team is asking us to consider the following:
 
 ## II. Project Goal
 
-- Analyze the relationship between total fare amount and payment type
-- Sample data and analyze whether there is a relationship between payment type and total fare amount. For example: discover if customers who use credit cards pay higher total fare amounts than customers who use cash.
-- Should you conclude that there is a statistically significant relationship between credit card payment and total fare amount, discuss what the next steps should be: what are your thoughts on strategies to encourage customers to pay with credit card if the difference is significant?
-- Explain result to stakeholders who may not be familiar with analytics
+The main purpose of this project is to Sample and analyze data to discover whether there is a relationship between payment type and total fare amount. For example: discover if customers who use credit cards pay higher total fare amounts than customers who use cash. Strategies can be made based on the result in order to find ways to generate more revenue for New York City taxi cab drivers.
 
 
 ## III. Data Source

@@ -77,7 +77,7 @@ The metric used for assessing if customers spend higher with credit card payment
 - $H_0 : \mu_{c} = \mu_{t}$
 
 There is no difference in average total fare amount between customers paid with cash and ones paid with credit card.
-- $H_0 : \mu_{c} \not= \mu_{t}$
+- $H_a : \mu_{c} \not= \mu_{t}$
 
 There is significant difference in average total fare amount between customers paid with cash and ones paid with credit card.
     

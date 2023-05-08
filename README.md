@@ -83,12 +83,12 @@ After performing EDA and Data cleaning, I conduct A/B test in following process:
     
     ```python
     # extract credit and cash group from original data
-credit = data[data['payment_type'] == 1]['total_amount']
-cash = data[data['payment_type'] == 2]['total_amount']
+    credit = data[data['payment_type'] == 1]['total_amount']
+    cash = data[data['payment_type'] == 2]['total_amount']
 
-# sampling based on the calculated sample size of 400
-t_group = credit.sample(n = 400, replace = True, random_state = 1)
-c_group = cash.sample(n = 400, replace = True, random_state = 1)
+    # sampling based on the calculated sample size of 400
+    t_group = credit.sample(n = 400, replace = True, random_state = 1)
+    c_group = cash.sample(n = 400, replace = True, random_state = 1)
     
 4. **Run the Experiment** - *What are the requirements for running an experiment?*
     

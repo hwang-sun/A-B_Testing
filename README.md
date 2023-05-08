@@ -81,6 +81,15 @@ After performing EDA and Data cleaning, I conduct A/B test in following process:
     
     - Based on the above assumptions, the sample size needed for conducting A/B test is: $n = \frac {16*(10)^2} {(2)^2} = 400$ for each group.
     
+    ```python
+    # extract credit and cash group from original data
+credit = data[data['payment_type'] == 1]['total_amount']
+cash = data[data['payment_type'] == 2]['total_amount']
+
+# sampling based on the calculated sample size of 400
+t_group = credit.sample(n = 400, replace = True, random_state = 1)
+c_group = cash.sample(n = 400, replace = True, random_state = 1)
+    
 4. **Run the Experiment** - *What are the requirements for running an experiment?*
     
     Instruments and data pipelines are set up to collect data. For the purpose of this project, assume that the sample data comes from an experiment in which customers are randomly selected and divided into two groups: 
